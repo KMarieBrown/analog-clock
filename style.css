@@ -1,15 +1,15 @@
 /* Layout */
+h1 {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 10px 0 0;
+}
+
 .main {
 	height: 100%;
 	margin: 0;
 	display: flex;
-	padding-bottom: 320px;
-	padding-left: 320px;
-	padding-right: 320px;
-}
-
-h1 {
-	text-align: center;
+	padding: 2%;
 }
 
 .clockbox,
@@ -22,7 +22,7 @@ h1 {
 .background {
 	width: 35%;
 	height: 100%;
-	margin: auto;
+	margin: 0 auto;
 	background-image: url(assets/images/pexels-pixabay-53594.jpg);
 	background-size: auto 100%;
 	background-position: center top;
@@ -138,4 +138,23 @@ text {
 #second {
 	transform-origin: 300px 300px;
 	transition: transform 0.5s ease-in-out;
+}
+
+/* For tablet size. */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+	.main {
+		padding-bottom: 18%;
+		padding-left: 18%;
+		padding-right: 18%;
+	}
+}
+
+/* For desktop size. */
+@media (min-width: 1025px) {
+	.main {
+		padding-bottom: 28%;
+		padding-left: 28%;
+		padding-right: 28%;
+	}
 }
