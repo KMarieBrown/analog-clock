@@ -121,6 +121,11 @@ svg.background:hover {
 	stroke-miterlimit: 10;
 }
 
+text {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 85px;
+}
+
 /* Transparent box ensuring arms center properly. */
 .sizing-box {
 	fill: none;
